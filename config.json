@@ -1,0 +1,57 @@
+{
+  "models": {
+    "detection": "yolov8l.pt",
+    "pose": "yolov8l-pose.pt"
+  },
+  "device": "cpu",
+  "confidence": 0.5,
+  "output_dir": "outputs",
+  "cameras": {
+    "entry": {
+      "name": "Entry",
+      "use_case": 1,
+      "stream_url": "entry.mp4",
+      "description": "Entry area monitoring for sitting on stairs, gatherings, and vehicle entry"
+    },
+    "reception": {
+      "name": "Reception",
+      "use_case": 2,
+      "stream_url": "reception.mp4",
+      "description": "Reception area monitoring for occupancy and gate jumping"
+    },
+    "datacenter_entry": {
+      "name": "Datacenter Entry",
+      "use_case": 3,
+      "stream_url": "datacenter_entry.mp4",
+      "description": "Datacenter entry monitoring for unauthorized access and emergency buttons"
+    },
+    "datacenter_inside": {
+      "name": "Datacenter Inside",
+      "use_case": 4,
+      "stream_url": "datacenter_inside.mp4",
+      "description": "Inside datacenter monitoring for unauthorized zone access"
+    },
+    "parking": {
+      "name": "Parking",
+      "use_case": 5,
+      "stream_url": "parking.mp4",
+      "description": "Parking area monitoring for improper parking and exit blocking"
+    }
+  },
+  "display": {
+    "show_ui": true,
+    "font_scale": 0.6,
+    "text_thickness": 1,
+    "box_thickness": 2
+  },
+  "processing": {
+    "skip_frames": 2,
+    "max_disappeared": 30,
+    "tracking_distance": 50
+  },
+  "events": {
+    "save_screenshots": true,
+    "save_clips": false,
+    "clip_duration": 5
+  }
+}

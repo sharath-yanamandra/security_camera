@@ -1,0 +1,108 @@
+{
+  "entry": {
+    "stairs": [
+      {
+        "name": "Main Staircase",
+        "coordinates": [50, 100, 250, 300]
+      }
+    ],
+    "gathering": [
+      {
+        "name": "Lobby Area",
+        "coordinates": [300, 100, 600, 400]
+      }
+    ],
+    "vehicle_entry": [
+      {
+        "name": "Vehicle Entrance",
+        "coordinates": [100, 400, 500, 600]
+      }
+    ]
+  },
+  "reception": {
+    "reception_area": [
+      {
+        "name": "Reception Zone",
+        "coordinates": [50, 50, 700, 400]
+      }
+    ],
+    "gate_area": [
+      {
+        "name": "Entry Gate",
+        "coordinates": [300, 350, 450, 450]
+      }
+    ]
+  },
+  "datacenter_entry": {
+    "authorized": [
+      {
+        "name": "Common Area",
+        "coordinates": [50, 50, 300, 300]
+      }
+    ],
+    "unauthorized": [
+      {
+        "name": "Server Room",
+        "coordinates": [350, 50, 600, 300]
+      }
+    ],
+    "emergency": [
+      {
+        "name": "Emergency Door",
+        "coordinates": [650, 100, 750, 250]
+      }
+    ]
+  },
+  "datacenter_inside": {
+    "authorized": [
+      {
+        "name": "Server Room",
+        "coordinates": [300, 100, 600, 400]
+      },
+      {
+        "name": "Network Center",
+        "coordinates": [500, 500, 700, 700]
+      }
+    ],
+    "unauthorized": [
+      {
+        "name": "Maintenance Area",
+        "coordinates": [50, 50, 250, 450]
+      }
+    ],
+    "entry_points": [
+      {
+        "name": "Main Door",
+        "coordinates": [250, 200, 300, 350]
+      }
+    ]
+  },
+  "parking": {
+    "parking_zones": [
+      {
+        "name": "Parking Zone 1",
+        "coordinates": [50, 50, 250, 200]
+      },
+      {
+        "name": "Parking Zone 2",
+        "coordinates": [300, 50, 500, 200]
+      }
+    ],
+    "exit_zones": [
+      {
+        "name": "Exit Path 1",
+        "coordinates": [100, 250, 200, 500]
+      },
+      {
+        "name": "Exit Path 2",
+        "coordinates": [350, 250, 450, 500]
+      }
+    ],
+    "no_parking": [
+      {
+        "name": "No Parking Zone",
+        "coordinates": [550, 50, 750, 200]
+      }
+    ]
+  }
+}

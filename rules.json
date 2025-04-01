@@ -1,0 +1,142 @@
+{
+  "entry": {
+    "sitting_on_stairs": {
+      "enabled": true,
+      "description": "Detect people sitting on stairs",
+      "severity": "medium",
+      "parameters": {
+        "min_detection_confidence": 0.6,
+        "min_duration": 5
+      }
+    },
+    "gathering": {
+      "enabled": true,
+      "description": "Detect gatherings in entry area",
+      "severity": "medium",
+      "parameters": {
+        "people_threshold": 3,
+        "min_duration": 10
+      }
+    },
+    "vehicle_entry": {
+      "enabled": true,
+      "description": "Monitor vehicle entry",
+      "severity": "low",
+      "parameters": {
+        "track_vehicle_types": ["car", "motorcycle", "bus", "truck"]
+      }
+    },
+    "parked_truck": {
+      "enabled": true,
+      "description": "Detect trucks parked in entry area",
+      "severity": "high",
+      "parameters": {
+        "min_stationary_time": 10,
+        "movement_threshold": 5
+      }
+    }
+  },
+
+  "reception": {
+    "max_occupancy": {
+      "enabled": true,
+      "description": "Limit number of people in reception area",
+      "severity": "high",
+      "parameters": {
+        "max_people": 10
+      }
+    },
+    "gate_jumping": {
+      "enabled": true,
+      "description": "Detect people jumping over entry gate",
+      "severity": "critical",
+      "parameters": {
+        "vertical_velocity_threshold": 15,
+        "jump_height_threshold": 0.3
+      }
+    }
+  },
+
+  "datacenter_entry": {
+    "unauthorized_access": {
+      "enabled": true,
+      "description": "Detect unauthorized access to restricted zones",
+      "severity": "critical",
+      "parameters": {
+        "min_overlap_ratio": 0.5
+      }
+    },
+    "emergency_button": {
+      "enabled": true,
+      "description": "Detect emergency button activation",
+      "severity": "critical",
+      "parameters": {
+        "detection_threshold": 0.7,
+        "button_pressed_duration": 1
+      }
+    }
+  },
+
+  "datacenter_inside": {
+    "unauthorized_zone_entry": {
+      "enabled": true,
+      "description": "Detect people entering from unauthorized zones",
+      "severity": "critical",
+      "parameters": {
+        "min_transition_confidence": 0.8
+      }
+    }
+  },
+
+  "parking": {
+    "improper_parking": {
+      "enabled": true,
+      "description": "Detect vehicles parked outside designated zones",
+      "severity": "medium",
+      "parameters": {
+        "min_stationary_time": 30,
+        "movement_threshold": 5
+      }
+    },
+    "exit_blocking": {
+      "enabled": true,
+      "description": "Detect vehicles blocking exit paths",
+      "severity": "high",
+      "parameters": {
+        "min_overlap_ratio": 0.3
+      }
+    },
+    "suspicious_activity": {
+      "enabled": true,
+      "description": "Detect suspicious activity in parking area",
+      "severity": "high",
+      "parameters": {
+        "rapid_movement_threshold": 50,
+        "loitering_time": 120
+      }
+    }
+  },
+
+  "global": {
+    "event_logging": {
+      "enabled": true,
+      "description": "Configure event logging behavior",
+      "parameters": {
+        "log_level": "info",
+        "save_screenshots": true,
+        "min_logging_confidence": 0.6,
+        "cooldown_period": 60
+      }
+    },
+    "alert_thresholds": {
+      "enabled": true,
+      "description": "Configure alert thresholds by severity",
+      "parameters": {
+        "low": 0.6,
+        "medium": 0.7,
+        "high": 0.8,
+        "critical": 0.9
+      }
+    }
+  }
+}
