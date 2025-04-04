@@ -46,7 +46,7 @@ A modular system for security camera monitoring with multiple use cases:
    pip install -r requirements.txt
    ```
 
-4. Download the YOLOv8 models (automatically downloaded on first run, or manually):
+4. Download the YOLOv8 models (automatically downloaded on first run, or manually).to download manualy just go to unralytics website select the best model that supports your system and download the .pt files:
    ```
    # Detection model
    wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8l.pt
