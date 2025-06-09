@@ -1,4 +1,4 @@
-# Security Camera Monitoring System. 
+# Security Camera Monitoring System...
 
 A modular system for security camera monitoring with multiple use cases:
 
